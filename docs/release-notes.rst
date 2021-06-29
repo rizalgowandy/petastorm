@@ -4,9 +4,22 @@
 Release notes
 =============
 
-Release 0.11.1 (unreleased)
+Release 0.11.2 (unreleased)
 ===========================
+- `PR ??? <https://github.com/uber/petastorm/pull/???>`_ (resolves issue
+  `#692 <https://github.com/uber/petastorm/issues/692>`_ ):
+  Python 3.9 compatibility - use `Thread`'s `is_alive()` instead of `isAlive()`.
 
+
+Release 0.11.1
+===========================
+- `PR 687 <https://github.com/uber/petastorm/pull/687>`_ (resolves issue
+  `#684 <https://github.com/uber/petastorm/issues/684>`_ ):
+  Fix a failure when reading data from a parquet file (and not a parquet directory).
+- `PR 686 <https://github.com/uber/petastorm/pull/686>`_ (resolves issue
+  `#685 <https://github.com/uber/petastorm/issues/685>`_ ):
+  Silenty omit fields that have unsupported types. Previously were failing
+  loudly making parquet stores with such fields unusable with Petastorm.
 
 Release 0.11.0
 ===========================
